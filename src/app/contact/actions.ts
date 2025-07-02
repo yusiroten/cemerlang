@@ -3,10 +3,10 @@
 import { z } from "zod";
 
 const contactSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email." }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+  name: z.string().min(2, { message: "Nama harus terdiri dari minimal 2 karakter." }),
+  email: z.string().email({ message: "Silakan masukkan email yang valid." }),
+  subject: z.string().min(5, { message: "Subjek harus terdiri dari minimal 5 karakter." }),
+  message: z.string().min(10, { message: "Pesan harus terdiri dari minimal 10 karakter." }),
 });
 
 export type FormState = {
@@ -28,7 +28,7 @@ export async function submitContactForm(
 
   if (!validatedFields.success) {
     return {
-      message: "There was an error with your submission. Please check the fields.",
+      message: "Terjadi kesalahan dengan kiriman Anda. Silakan periksa kembali isiannya.",
       success: false,
     };
   }
@@ -40,13 +40,13 @@ export async function submitContactForm(
     console.log(validatedFields.data);
 
     return {
-      message: "Thank you for your message! We will get back to you shortly.",
+      message: "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.",
       success: true,
     };
   } catch (error) {
     console.error("Failed to process contact form:", error);
     return {
-      message: "An unexpected error occurred. Please try again later.",
+      message: "Terjadi kesalahan tak terduga. Silakan coba lagi nanti.",
       success: false,
     };
   }

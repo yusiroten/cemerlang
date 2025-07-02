@@ -4,37 +4,37 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const products = [
   {
     name: 'CG-Asphalt Premium Mix',
-    description: 'A superior hot-mix asphalt designed for high-traffic motorways and primary roads. Offers exceptional durability, resistance to rutting, and a smooth finish for enhanced driver safety.',
+    description: 'Aspal hot-mix superior yang dirancang untuk jalan raya dengan lalu lintas padat dan jalan utama. Menawarkan daya tahan luar biasa, ketahanan terhadap bekas roda, dan hasil akhir yang halus untuk meningkatkan keselamatan pengemudi.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'asphalt texture'
   },
   {
     name: 'CG-Seal Crack Filler',
-    description: 'A flexible, polymer-modified sealant for filling cracks in asphalt and concrete surfaces. Prevents water ingress and extends pavement life. Suitable for all climates.',
+    description: 'Bahan penutup retak fleksibel yang dimodifikasi polimer untuk mengisi retakan pada permukaan aspal dan beton. Mencegah masuknya air dan memperpanjang umur perkerasan. Cocok untuk semua iklim.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'road crack'
   },
   {
     name: 'CG-Pave Cold Patch',
-    description: 'A high-performance, ready-to-use cold patch material for instant pothole repairs. Can be applied in all weather conditions, ensuring immediate and long-lasting results.',
+    description: 'Bahan tambalan dingin siap pakai berkinerja tinggi untuk perbaikan lubang instan. Dapat diaplikasikan dalam segala kondisi cuaca, memastikan hasil yang segera dan tahan lama.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'pothole road'
   },
   {
     name: 'CG-Coat Surface Sealant',
-    description: 'A protective sealcoating that rejuvenates and protects asphalt surfaces. Shields against UV radiation, water, and chemical spills, giving pavements a fresh, black finish.',
+    description: 'Lapisan pelindung yang meremajakan dan melindungi permukaan aspal. Melindungi dari radiasi UV, air, dan tumpahan bahan kimia, memberikan hasil akhir hitam yang baru pada perkerasan.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'wet asphalt'
   },
   {
     name: 'CG-Mark ThermoPaint',
-    description: 'A thermoplastic road marking paint with high retroreflectivity for superior visibility day and night. Quick-drying and extremely durable, ideal for highways and city streets.',
+    description: 'Cat marka jalan termoplastik dengan retroreflektivitas tinggi untuk visibilitas superior siang dan malam. Cepat kering dan sangat tahan lama, ideal untuk jalan raya dan jalan kota.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'road markings'
   },
   {
     name: 'CG-Base Aggregate',
-    description: 'A high-quality, crushed stone aggregate that forms a stable and reliable base for all types of pavement structures. Engineered for optimal compaction and load distribution.',
+    description: 'Agregat batu pecah berkualitas tinggi yang membentuk dasar yang stabil dan andal untuk semua jenis struktur perkerasan. Direkayasa untuk pemadatan dan distribusi beban yang optimal.',
     image: 'https://placehold.co/600x400.png',
     aiHint: 'gravel pile'
   },
@@ -45,9 +45,9 @@ export default function ProductsPage() {
     <>
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Our Products</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold">Produk Kami</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Engineered for performance, durability, and sustainability.
+            Direkayasa untuk kinerja, daya tahan, dan keberlanjutan.
           </p>
         </div>
       </section>

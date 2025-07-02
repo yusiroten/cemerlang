@@ -10,12 +10,12 @@ import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
-  { href: '/products', label: 'Products' },
-  { href: '/solutions', label: 'Solutions' },
-  { href: '/resources', label: 'Resources' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/', label: 'Beranda' },
+  { href: '/about', label: 'Tentang Kami' },
+  { href: '/products', label: 'Produk' },
+  { href: '/solutions', label: 'Solusi' },
+  { href: '/resources', label: 'Sumber Daya' },
+  { href: '/contact', label: 'Kontak' },
 ];
 
 export function Header() {
@@ -51,7 +51,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
                 <Menu className="h-5 w-5" />
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">Buka menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">

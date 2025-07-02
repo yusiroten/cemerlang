@@ -18,40 +18,37 @@ export function Footer() {
           <div className="md:col-span-1">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
-              Your trusted partner in road maintenance and construction solutions.
+              Mitra terpercaya Anda dalam solusi pemeliharaan dan konstruksi jalan.
             </p>
           </div>
           <div className="md:col-span-1">
-            <h3 className="font-headline font-semibold text-primary">Contact Us</h3>
+            <h3 className="font-headline font-semibold text-primary">Hubungi Kami</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>contact@cemerlanggroup.com</span>
+                <span>kontak@cemerlanggroup.com</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+1 234 567 890</span>
+                <span>+62 123 4567 890</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>123 Industrial Park, Pavement City, 12345</span>
+                <span>Kawasan Industri 123, Kota Aspal, 12345</span>
               </li>
             </ul>
           </div>
           <div className="md:col-span-1">
-            <h3 className="font-headline font-semibold text-primary">Quick Links</h3>
+            <h3 className="font-headline font-semibold text-primary">Tautan Cepat</h3>
             <ul className="mt-4 space-y-3 text-sm">
-              {['About Us', 'Products', 'Solutions', 'Contact'].map((item) => (
-                 <li key={item}>
-                   <Link href={`/${item.toLowerCase().replace(' ', '')}`} className="text-muted-foreground hover:text-primary transition-colors">
-                     {item}
-                   </Link>
-                 </li>
-              ))}
+                 <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">Tentang Kami</Link></li>
+                 <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">Produk</Link></li>
+                 <li><Link href="/solutions" className="text-muted-foreground hover:text-primary transition-colors">Solusi</Link></li>
+                 <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Kontak</Link></li>
             </ul>
           </div>
           <div className="md:col-span-1">
-            <h3 className="font-headline font-semibold text-primary">Follow Us</h3>
+            <h3 className="font-headline font-semibold text-primary">Ikuti Kami</h3>
             <div className="flex mt-4 space-x-4">
               {socialLinks.map((social) => (
                 <a key={social.name} href={social.href} className="text-muted-foreground hover:text-primary transition-colors">
@@ -63,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {year} CemerlangGroup. All rights reserved.</p>
+          <p>&copy; {year} CemerlangGroup. Hak cipta dilindungi.</p>
         </div>
       </div>
     </footer>

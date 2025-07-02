@@ -10,28 +10,28 @@ import { Button } from "@/components/ui/button";
 
 const solutions = [
   {
-    title: "Major Road Construction",
-    description: "Building new highways and primary roads requires materials that can withstand heavy traffic and harsh conditions. Our solutions ensure a long-lasting and safe infrastructure from the ground up.",
+    title: "Konstruksi Jalan Utama",
+    description: "Membangun jalan raya dan jalan utama baru membutuhkan bahan yang tahan terhadap lalu lintas padat dan kondisi ekstrem. Solusi kami memastikan infrastruktur yang tahan lama dan aman dari awal.",
     products: ["CG-Asphalt Premium Mix", "CG-Base Aggregate", "CG-Mark ThermoPaint"],
   },
   {
-    title: "Pothole & Pavement Repair",
-    description: "Quickly and effectively repair potholes and pavement damage to restore road safety and prevent further deterioration. Our products are designed for durability and ease of use.",
+    title: "Perbaikan Lubang & Perkerasan",
+    description: "Perbaiki lubang dan kerusakan perkerasan dengan cepat dan efektif untuk mengembalikan keselamatan jalan dan mencegah kerusakan lebih lanjut. Produk kami dirancang untuk daya tahan dan kemudahan penggunaan.",
     products: ["CG-Pave Cold Patch", "CG-Seal Crack Filler"],
   },
   {
-    title: "Preventative Maintenance & Crack Sealing",
-    description: "Extend the life of your pavement with our preventative maintenance solutions. Sealing cracks and surfaces protects against water and environmental damage, saving costs in the long run.",
+    title: "Pemeliharaan Preventif & Penambalan Retak",
+    description: "Perpanjang umur perkerasan Anda dengan solusi pemeliharaan preventif kami. Menutup retakan dan permukaan melindungi dari kerusakan air dan lingkungan, menghemat biaya dalam jangka panjang.",
     products: ["CG-Seal Crack Filler", "CG-Coat Surface Sealant"],
   },
   {
-    title: "Road Marking & Safety",
-    description: "Ensure maximum visibility and safety with our high-quality road marking solutions. Our durable paints are designed for high-traffic areas and all-weather performance.",
+    title: "Marka Jalan & Keselamatan",
+    description: "Pastikan visibilitas dan keselamatan maksimum dengan solusi marka jalan berkualitas tinggi kami. Cat kami yang tahan lama dirancang untuk area lalu lintas padat dan kinerja segala cuaca.",
     products: ["CG-Mark ThermoPaint"],
   },
   {
-    title: "Residential & Commercial Paving",
-    description: "From driveways to parking lots, our products provide a reliable and aesthetic finish for smaller-scale projects, offering the same industrial-grade quality.",
+    title: "Pengaspalan Perumahan & Komersial",
+    description: "Dari jalan masuk hingga tempat parkir, produk kami memberikan hasil akhir yang andal dan estetis untuk proyek skala kecil, menawarkan kualitas tingkat industri yang sama.",
     products: ["CG-Asphalt Premium Mix", "CG-Coat Surface Sealant"],
   }
 ];
@@ -41,9 +41,9 @@ export default function SolutionsPage() {
     <>
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Application Solutions</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold">Solusi Aplikasi</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Tailored solutions for every road maintenance and construction challenge.
+            Solusi yang disesuaikan untuk setiap tantangan pemeliharaan dan konstruksi jalan.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function SolutionsPage() {
                 </AccordionTrigger>
                 <AccordionContent>
                   <p className="mb-4 text-muted-foreground">{solution.description}</p>
-                  <h4 className="font-semibold mb-2">Recommended Products:</h4>
+                  <h4 className="font-semibold mb-2">Produk yang Direkomendasikan:</h4>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
                     {solution.products.map(prod => <li key={prod}>{prod}</li>)}
                   </ul>
@@ -68,10 +68,10 @@ export default function SolutionsPage() {
           </Accordion>
           
           <div className="text-center mt-16">
-              <h2 className="font-headline text-2xl font-bold text-primary">Explore Our Full Product Range</h2>
-              <p className="mt-2 text-muted-foreground mb-4">Find the perfect material for your specific needs.</p>
+              <h2 className="font-headline text-2xl font-bold text-primary">Jelajahi Jajaran Produk Lengkap Kami</h2>
+              <p className="mt-2 text-muted-foreground mb-4">Temukan bahan yang sempurna untuk kebutuhan spesifik Anda.</p>
               <Button asChild>
-                  <Link href="/products">View All Products <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <Link href="/products">Lihat Semua Produk <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
           </div>
         </div>

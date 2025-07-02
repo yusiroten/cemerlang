@@ -7,9 +7,9 @@ export default function AboutPage() {
     <>
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">About CemerlangGroup</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold">Tentang CemerlangGroup</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Building the foundations for a connected and sustainable future through excellence in road engineering.
+            Membangun fondasi untuk masa depan yang terhubung dan berkelanjutan melalui keunggulan dalam rekayasa jalan.
           </p>
         </div>
       </section>
@@ -18,18 +18,18 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="font-headline text-3xl font-bold text-primary mb-4">Our Story</h2>
+              <h2 className="font-headline text-3xl font-bold text-primary mb-4">Kisah Kami</h2>
               <p className="mb-4 text-muted-foreground">
-                Founded in 2001, CemerlangGroup began with a small team of passionate engineers and a single, powerful vision: to revolutionize the road construction industry. We saw a need for more durable, sustainable, and cost-effective materials and solutions.
+                Didirikan pada tahun 2001, CemerlangGroup dimulai dengan tim kecil insinyur yang bersemangat dan satu visi yang kuat: merevolusi industri konstruksi jalan. Kami melihat kebutuhan akan bahan dan solusi yang lebih tahan lama, berkelanjutan, dan hemat biaya.
               </p>
               <p className="text-muted-foreground">
-                Over the past two decades, we've grown into a leading provider of road maintenance products, trusted by public and private sectors alike. Our journey has been one of continuous innovation, unwavering commitment to quality, and a deep-seated desire to build infrastructure that lasts for generations.
+                Selama dua dekade terakhir, kami telah berkembang menjadi penyedia produk perawatan jalan terkemuka, yang dipercaya oleh sektor publik dan swasta. Perjalanan kami adalah salah satu inovasi berkelanjutan, komitmen yang tak tergoyahkan terhadap kualitas, dan keinginan mendalam untuk membangun infrastruktur yang bertahan selama beberapa generasi.
               </p>
             </div>
             <div className="order-1 md:order-2">
               <Image
                 src="https://placehold.co/600x400.png"
-                alt="Company History"
+                alt="Sejarah Perusahaan"
                 data-ai-hint="old photo construction"
                 width={600}
                 height={400}
@@ -43,9 +43,9 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl font-bold text-primary">Our Mission & Values</h2>
+            <h2 className="font-headline text-3xl font-bold text-primary">Misi & Nilai Kami</h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our principles guide every decision we make and every project we undertake.
+              Prinsip-prinsip kami memandu setiap keputusan yang kami buat dan setiap proyek yang kami jalankan.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -54,10 +54,10 @@ export default function AboutPage() {
                 <div className="mx-auto bg-accent text-accent-foreground rounded-full h-12 w-12 flex items-center justify-center mb-4">
                   <Target className="h-6 w-6" />
                 </div>
-                <CardTitle className="font-headline">Our Mission</CardTitle>
+                <CardTitle className="font-headline">Misi Kami</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">To provide superior road construction and maintenance solutions that enhance safety, connectivity, and quality of life for communities.</p>
+                <p className="text-muted-foreground">Menyediakan solusi konstruksi dan pemeliharaan jalan yang unggul yang meningkatkan keselamatan, konektivitas, dan kualitas hidup masyarakat.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
@@ -65,10 +65,10 @@ export default function AboutPage() {
                 <div className="mx-auto bg-accent text-accent-foreground rounded-full h-12 w-12 flex items-center justify-center mb-4">
                   <Building className="h-6 w-6" />
                 </div>
-                <CardTitle className="font-headline">Quality</CardTitle>
+                <CardTitle className="font-headline">Kualitas</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">We are committed to the highest standards of quality in our products, services, and operations.</p>
+                <p className="text-muted-foreground">Kami berkomitmen pada standar kualitas tertinggi dalam produk, layanan, dan operasi kami.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
@@ -76,10 +76,10 @@ export default function AboutPage() {
                 <div className="mx-auto bg-accent text-accent-foreground rounded-full h-12 w-12 flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6" />
                 </div>
-                <CardTitle className="font-headline">Integrity</CardTitle>
+                <CardTitle className="font-headline">Integritas</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">We operate with honesty, transparency, and a strong sense of ethics in all our business dealings.</p>
+                <p className="text-muted-foreground">Kami beroperasi dengan kejujuran, transparansi, dan etika yang kuat dalam semua urusan bisnis kami.</p>
               </CardContent>
             </Card>
             <Card className="text-center">
@@ -87,10 +87,10 @@ export default function AboutPage() {
                 <div className="mx-auto bg-accent text-accent-foreground rounded-full h-12 w-12 flex items-center justify-center mb-4">
                   <Leaf className="h-6 w-6" />
                 </div>
-                <CardTitle className="font-headline">Sustainability</CardTitle>
+                <CardTitle className="font-headline">Keberlanjutan</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">We prioritize environmentally responsible practices and the development of sustainable materials.</p>
+                <p className="text-muted-foreground">Kami memprioritaskan praktik yang bertanggung jawab terhadap lingkungan dan pengembangan bahan yang berkelanjutan.</p>
               </CardContent>
             </Card>
           </div>
@@ -99,16 +99,16 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl font-bold text-primary mb-4">Our Clients & Partners</h2>
+          <h2 className="font-headline text-3xl font-bold text-primary mb-4">Klien & Mitra Kami</h2>
           <p className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-            We are proud to have worked with a diverse range of clients who trust us to deliver.
+            Kami bangga telah bekerja dengan berbagai klien yang mempercayai kami untuk memberikan hasil.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 text-muted-foreground">
-            <span className="font-headline text-xl">Client Logo 1</span>
-            <span className="font-headline text-xl">Client Logo 2</span>
-            <span className="font-headline text-xl">Client Logo 3</span>
-            <span className="font-headline text-xl">Client Logo 4</span>
-            <span className="font-headline text-xl">Client Logo 5</span>
+            <span className="font-headline text-xl">Logo Klien 1</span>
+            <span className="font-headline text-xl">Logo Klien 2</span>
+            <span className="font-headline text-xl">Logo Klien 3</span>
+            <span className="font-headline text-xl">Logo Klien 4</span>
+            <span className="font-headline text-xl">Logo Klien 5</span>
           </div>
         </div>
       </section>

@@ -5,8 +5,8 @@ import { Footer } from '@/components/footer';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'CemerlangGroup - Innovative Road Maintenance Solutions',
-  description: 'CemerlangGroup offers top-tier products and solutions for road construction, maintenance, and safety. Paving the way to a better future.',
+  title: 'CemerlangGroup - Solusi Inovatif Perawatan Jalan',
+  description: 'CemerlangGroup menawarkan produk dan solusi terbaik untuk konstruksi, pemeliharaan, dan keselamatan jalan. Membangun jalan menuju masa depan yang lebih baik.',
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="id" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
