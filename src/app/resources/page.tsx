@@ -1,39 +1,40 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Download, Phone } from 'lucide-react';
+import { Download, Phone, Wrench, FileText, MessageSquare } from 'lucide-react';
 
 const guides = [
   {
-    title: 'Panduan Perbaikan Lubang',
-    description: 'Panduan langkah demi langkah tentang cara memperbaiki lubang secara efektif menggunakan CG-Pave Cold Patch untuk hasil yang tahan lama.',
-    file: 'pothole-repair-guide.pdf',
+    title: 'Panduan Aplikasi Microsurfacing',
+    description: 'Prosedur standar untuk aplikasi Microsurfacing CH untuk hasil yang optimal dan merata.',
+    file: 'microsurfacing-guide.pdf',
   },
   {
-    title: 'Praktik Terbaik Penambalan Retak',
-    description: 'Pelajari teknik yang tepat untuk menutup retakan pada aspal untuk mencegah kerusakan akibat air dan memperpanjang umur perkerasan.',
-    file: 'crack-sealing-guide.pdf',
+    title: 'Teknik Penambalan Cepat dengan Coldmix',
+    description: 'Langkah demi langkah memperbaiki lubang jalan secara efisien menggunakan Coldmix.',
+    file: 'coldmix-patching-guide.pdf',
   },
   {
-    title: 'Manual Aplikasi Pelapisan Pelindung',
-    description: 'Maksimalkan manfaat perlindungan dari CG-Coat Surface Sealant dengan manual aplikasi terperinci kami.',
-    file: 'sealcoating-manual.pdf',
+    title: 'Manual Aplikasi Waterproofing S.A.M.I',
+    description: 'Praktik terbaik untuk instalasi membran S.A.M.I guna memastikan perlindungan maksimal.',
+    file: 'sami-waterproofing-manual.pdf',
   },
   {
-    title: 'Standar & Teknik Marka Jalan',
-    description: 'Tinjauan standar industri dan teknik aplikasi untuk marka jalan yang tahan lama dan sangat terlihat.',
-    file: 'road-marking-guide.pdf',
+    title: 'Standar Aplikasi Marka Jalan McLeod',
+    description: 'Panduan untuk aplikasi cat termoplastik McLeod untuk daya tahan dan reflektivitas tinggi.',
+    file: 'mcleod-marking-guide.pdf',
   },
 ];
 
 export default function ResourcesPage() {
   return (
     <>
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Sumber Daya & Panduan</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Pengetahuan ahli untuk membantu Anda sukses dalam proyek Anda. Unduh panduan kami atau hubungi kami untuk konsultasi.
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Dukungan Teknis</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+            Kami bukan hanya pemasok material, kami adalah mitra teknis Anda di lapangan.
           </p>
         </div>
       </section>
@@ -42,7 +43,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="font-headline text-3xl font-bold text-primary mb-8">Panduan Aplikasi yang Dapat Diunduh</h2>
+              <h2 className="font-headline text-3xl font-bold text-primary mb-8">Panduan Aplikasi & Brosur</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {guides.map((guide) => (
                   <Card key={guide.title} className="flex flex-col">
@@ -52,7 +53,7 @@ export default function ResourcesPage() {
                     </CardHeader>
                     <CardContent className="flex-grow" />
                     <CardFooter>
-                      <Button asChild className="w-full bg-accent hover:bg-accent/90">
+                      <Button asChild className="w-full bg-primary hover:bg-primary/90">
                         <a href={`/guides/${guide.file}`} download>
                           <Download className="mr-2 h-4 w-4" />
                           Unduh PDF
@@ -67,19 +68,33 @@ export default function ResourcesPage() {
             <div className="lg:col-span-1">
               <Card className="bg-card sticky top-24">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl text-primary">Butuh Saran Ahli?</CardTitle>
+                  <CardTitle className="font-headline text-2xl text-primary">Butuh Bantuan Ahli?</CardTitle>
                   <CardDescription>
-                    Spesialis kami siap membantu Anda memilih produk dan solusi yang tepat untuk proyek Anda.
+                    Tim spesialis kami siap membantu Anda dari perencanaan hingga pelaksanaan.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p>Kami menawarkan:
-                    <ul className="list-disc list-inside mt-2 text-muted-foreground">
-                      <li>Rekomendasi produk</li>
-                      <li>Dukungan teknis</li>
-                      <li>Perencanaan solusi khusus</li>
-                    </ul>
-                  </p>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Wrench className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold">Konsultasi Produk</h4>
+                      <p className="text-sm text-muted-foreground">Rekomendasi produk paling sesuai untuk kondisi proyek Anda.</p>
+                    </div>
+                  </div>
+                   <div className="flex items-start gap-3">
+                    <FileText className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold">Dukungan Teknis Lapangan</h4>
+                      <p className="text-sm text-muted-foreground">Bantuan teknis langsung di lokasi proyek Anda.</p>
+                    </div>
+                  </div>
+                   <div className="flex items-start gap-3">
+                    <MessageSquare className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold">Perencanaan Solusi</h4>
+                      <p className="text-sm text-muted-foreground">Pengembangan metode kerja dan solusi kustom.</p>
+                    </div>
+                  </div>
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full">

@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useEffect } from 'react';
@@ -42,11 +43,11 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">Hubungi Kami</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Kami di sini untuk membantu. Apakah Anda memiliki pertanyaan tentang produk kami atau memerlukan konsultasi, jangan ragu untuk menghubungi.
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Hubungi Kami</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+            Kami siap membantu. Baik untuk pertanyaan produk, permintaan penawaran, maupun konsultasi teknis, tim kami siap melayani Anda.
           </p>
         </div>
       </section>
@@ -57,28 +58,28 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Kirimkan kami pesan</CardTitle>
-                  <CardDescription>Tim kami akan menanggapi pertanyaan Anda dalam waktu 24 jam.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">Kirimkan Pesan</CardTitle>
+                  <CardDescription>Isi formulir di bawah ini dan tim kami akan segera merespons.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form action={formAction} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Nama Anda</Label>
-                        <Input id="name" name="name" placeholder="Budi" required />
+                        <Input id="name" name="name" placeholder="Nama Lengkap" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Email Anda</Label>
-                        <Input id="email" name="email" type="email" placeholder="budi@contoh.com" required />
+                        <Input id="email" name="email" type="email" placeholder="email@perusahaan.com" required />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="subject">Subjek</Label>
-                      <Input id="subject" name="subject" placeholder="Pertanyaan tentang CG-Asphalt" required />
+                      <Input id="subject" name="subject" placeholder="Contoh: Permintaan Penawaran Microsurfacing" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Pesan</Label>
-                      <Textarea id="message" name="message" placeholder="Silakan ketik pesan Anda di sini..." rows={6} required />
+                      <Textarea id="message" name="message" placeholder="Jelaskan kebutuhan Anda di sini..." rows={6} required />
                     </div>
                     <SubmitButton />
                   </form>
@@ -89,30 +90,30 @@ export default function ContactPage() {
                 <h2 className="font-headline text-2xl font-bold text-primary mb-6">Informasi Kontak</h2>
                 <div className="space-y-6">
                     <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-10 h-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                            <Phone className="w-5 h-5"/>
                         </div>
                         <div>
-                            <h3 className="font-semibold">Telepon</h3>
-                            <p className="text-muted-foreground">+62 123 4567 890</p>
+                            <h3 className="font-semibold">WhatsApp (WA)</h3>
+                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">+62 812-3456-7890</a>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-10 h-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                            <Mail className="w-5 h-5"/>
                         </div>
                         <div>
                             <h3 className="font-semibold">Email</h3>
-                            <p className="text-muted-foreground">kontak@cemerlanggroup.com</p>
+                            <a href="mailto:kontak@cemerlang.group" className="text-muted-foreground hover:text-primary">kontak@cemerlang.group</a>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-10 h-10 bg-accent text-accent-foreground rounded-full flex items-center justify-center">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                            <MapPin className="w-5 h-5"/>
                         </div>
                         <div>
-                            <h3 className="font-semibold">Alamat</h3>
-                            <p className="text-muted-foreground">Kawasan Industri 123, Kota Aspal, 12345</p>
+                            <h3 className="font-semibold">Alamat Kantor</h3>
+                            <p className="text-muted-foreground">Kawasan Industri Cemerlang, Jl. Raya Aspal No. 123, Jakarta, Indonesia</p>
                         </div>
                     </div>
                 </div>

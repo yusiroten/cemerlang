@@ -1,12 +1,14 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Toaster } from "@/components/ui/toaster"
+import { CartProvider } from '@/hooks/use-cart';
 
 export const metadata: Metadata = {
-  title: 'CemerlangGroup - Solusi Inovatif Perawatan Jalan',
-  description: 'CemerlangGroup menawarkan produk dan solusi terbaik untuk konstruksi, pemeliharaan, dan keselamatan jalan. Membangun jalan menuju masa depan yang lebih baik.',
+  title: 'Cemerlang Group - Solusi Material Perawatan Jalan',
+  description: 'Cemerlang Group menyediakan material berkualitas tinggi untuk perawatan, pelapisan, dan konstruksi jalan. Solusi inovatif untuk infrastruktur Indonesia.',
 };
 
 export default function RootLayout({
@@ -22,12 +24,14 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <Toaster />
+        <CartProvider>
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <Toaster />
+        </CartProvider>
       </body>
     </html>
   );

@@ -1,12 +1,15 @@
+
 import Link from 'next/link';
-import { Construction } from 'lucide-react';
+import { Road } from 'lucide-react';
 
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2">
-      <Construction className="h-7 w-7 text-primary" />
+      <div className="bg-primary text-primary-foreground p-2 rounded-md">
+         <Road className="h-6 w-6" />
+      </div>
       <span className="text-xl font-bold font-headline text-primary">
-        CemerlangGroup
+        Cemerlang Group
       </span>
     </Link>
   );
