@@ -6,7 +6,6 @@ import { ArrowRight, CheckCircle, Leaf, ShieldCheck } from 'lucide-react';
 import { products } from '@/lib/data';
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 3);
 
   return (
     <div className="flex flex-col">
@@ -84,19 +83,19 @@ export default function Home() {
         </div>
       </section>
       
-       {/* Featured Products */}
+       {/* All Products */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
            <div className="text-center mb-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Produk Unggulan
+              Produk Kami
             </h2>
             <p className="font-body text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-              Jelajahi beberapa solusi terlaris kami yang dipercaya oleh para profesional industri.
+              Jelajahi solusi material inovatif kami yang direkayasa untuk performa, daya tahan, dan keberlanjutan infrastruktur jalan.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProducts.map((product) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product) => (
                 <div key={product.id} className="border rounded-lg overflow-hidden flex flex-col bg-card">
                    <div className="relative h-56 w-full">
                         <Image src={product.image} alt={product.name} data-ai-hint={product.aiHint} fill className="object-cover" />
