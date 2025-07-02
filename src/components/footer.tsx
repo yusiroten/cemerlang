@@ -1,7 +1,19 @@
 
 import { Logo } from '@/components/logo';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import Link from 'next/link';
+
+const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+    fill="currentColor"
+    {...props}
+  >
+    <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+  </svg>
+);
+
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -50,9 +62,21 @@ export function Footer() {
               Terhubung dengan kami di media sosial.
             </p>
             <div className="flex mt-4 space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Facebook</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Instagram</a>
+              <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="TikTok" className="text-muted-foreground hover:text-primary transition-colors">
+                <TikTokIcon className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors">
+                <Youtube className="h-6 w-6" />
+              </a>
             </div>
           </div>
         </div>
