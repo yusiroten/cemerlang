@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Road, Layers, Wind } from 'lucide-react';
+import { ArrowRight, Construction, Layers, Wind } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
               <div className="flex items-center justify-center h-16 w-16 rounded-full bg-accent text-accent-foreground mb-4">
-                <Road className="h-8 w-8" />
+                <Construction className="h-8 w-8" />
               </div>
               <h3 className="font-headline text-xl font-semibold mb-2">Durable Materials</h3>
               <p className="font-body text-muted-foreground">
