@@ -72,12 +72,14 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 export const CartProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
   const [state, dispatch] = React.useReducer(cartReducer, { items: [] });
 
-  return (
-    <CartStateContext.Provider value={state}>
-      <CartDispatchContext.Provider value={dispatch}>
-        {children}
-      </CartDispatchContext.Provider>
-    </CartStateContext.Provider>
+  return React.createElement(
+    CartStateContext.Provider,
+    { value: state },
+    React.createElement(
+      CartDispatchContext.Provider,
+      { value: dispatch },
+      children
+    )
   );
 };
 

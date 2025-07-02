@@ -1,6 +1,7 @@
 
 'use client';
 
+import * as React from "react";
 import { useCart, useCartDispatch } from '@/hooks/use-cart';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetFooter, SheetTrigger } from '@/components/ui/sheet';
