@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Download, Phone, Wrench, FileText, MessageSquare } from 'lucide-react';
+import { CtaSection } from '@/components/cta-section';
 
 const guides = [
   {
@@ -109,6 +110,8 @@ export default function ResourcesPage() {
           </div>
         </div>
       </section>
+
+      <CtaSection />
     </>
   );
 }

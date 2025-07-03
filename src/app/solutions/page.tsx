@@ -8,6 +8,7 @@ import {
 import { ArrowRight, Construction, Droplets, Paintbrush, Network } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { CtaSection } from "@/components/cta-section";
 
 const solutions = [
   {
@@ -83,6 +84,7 @@ export default function SolutionsPage() {
           </div>
         </div>
       </section>
+      <CtaSection />
     </>
   )
 }

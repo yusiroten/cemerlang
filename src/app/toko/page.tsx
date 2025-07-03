@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { useCartDispatch } from '@/hooks/use-cart';
 import { useToast } from "@/hooks/use-toast";
 import { ShoppingCart } from 'lucide-react';
+import { CtaSection } from '@/components/cta-section';
 
 function formatPrice(price: number) {
   return new Intl.NumberFormat('id-ID', {
@@ -71,6 +72,8 @@ export default function TokoPage() {
           </div>
         </div>
       </section>
+
+      <CtaSection />
     </>
   );
 }

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building, Target, Heart, Leaf, FileText, Users, Award } from 'lucide-react';
+import { CtaSection } from '@/components/cta-section';
 
 export default function AboutPage() {
   return (
@@ -153,6 +154,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <CtaSection />
     </>
   );
 }

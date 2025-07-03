@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { products } from '@/lib/data';
-import { ArrowRight } from 'lucide-react';
+import { CtaSection } from '@/components/cta-section';
 
 export default function ProductsPage() {
   return (
@@ -51,19 +51,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl font-bold text-primary">Tidak Menemukan yang Anda Cari?</h2>
-          <p className="mt-4 text-lg max-w-2xl mx-auto text-muted-foreground mb-8">
-            Tim ahli kami siap membantu Anda menemukan atau bahkan mengembangkan solusi khusus untuk kebutuhan unik proyek Anda.
-          </p>
-          <Button asChild size="lg">
-            <Link href="/contact">
-              Hubungi Tim Teknis <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
-      </section>
+      <CtaSection />
     </>
   );
 }
