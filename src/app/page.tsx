@@ -97,7 +97,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
                 <div key={product.id} className="border rounded-lg overflow-hidden flex flex-col bg-card">
-                   <div className="relative h-56 w-full">
+                   <div className="relative w-full aspect-square">
                         <Image src={product.image} alt={product.name} data-ai-hint={product.aiHint} fill className="object-cover" />
                     </div>
                     <div className="p-6 flex-grow flex flex-col">
