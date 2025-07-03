@@ -30,7 +30,7 @@ export function Footer() {
           </div>
           <div className="md:col-span-2">
             <h3 className="font-headline font-semibold text-primary">Tautan Cepat</h3>
-            <ul className="mt-4 space-y-3 text-sm">
+            <ul className="mt-4 space-y-2 text-sm">
                  <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">Tentang Kami</Link></li>
                  <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">Produk</Link></li>
                  <li><Link href="/solutions" className="text-muted-foreground hover:text-primary transition-colors">Solusi</Link></li>
@@ -85,7 +85,7 @@ export function Footer() {
             <div className="mt-4 rounded-lg overflow-hidden">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.425785002596!2d106.90906235!3d-6.183226399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4e915431679%3A0x1d58d8bde6373678!2sJakarta%20Industrial%20Estate%20Pulogadung%20(JIEP)!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-                    className="w-full h-40 border-0"
+                    className="w-full h-48 border-0"
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
