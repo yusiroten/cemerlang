@@ -36,6 +36,7 @@ export function Footer() {
                  <li><Link href="/solutions" className="text-muted-foreground hover:text-primary transition-colors">Solusi</Link></li>
                  <li><Link href="/resources" className="text-muted-foreground hover:text-primary transition-colors">Dukungan Teknis</Link></li>
                  <li><Link href="/toko" className="text-muted-foreground hover:text-primary transition-colors">Toko</Link></li>
+                 <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
                  <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Kontak</Link></li>
             </ul>
           </div>
