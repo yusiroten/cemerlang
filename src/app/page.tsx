@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, Leaf, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Award, Building, CheckCircle, FileText, Leaf, ShieldCheck } from 'lucide-react';
 import { products } from '@/lib/data';
+import { Card } from '@/components/ui/card';
 
 export default function Home() {
 
@@ -82,9 +83,43 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* License Section */}
+      <section id="lisensi" className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+              <h2 className="font-headline text-3xl font-bold text-primary">Lisensi &amp; Sertifikasi Kami</h2>
+              <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Komitmen kami terhadap kualitas dibuktikan dengan pengakuan dan standar yang kami penuhi.
+              </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="text-center p-6">
+                <Award className="h-10 w-10 mx-auto mb-4 text-primary"/>
+                <h3 className="font-headline text-lg font-semibold">ISO 9001:2015</h3>
+                <p className="text-sm text-muted-foreground mt-1">Manajemen Mutu</p>
+            </Card>
+             <Card className="text-center p-6">
+                <Award className="h-10 w-10 mx-auto mb-4 text-primary"/>
+                <h3 className="font-headline text-lg font-semibold">ISO 14001:2015</h3>
+                <p className="text-sm text-muted-foreground mt-1">Manajemen Lingkungan</p>
+            </Card>
+             <Card className="text-center p-6">
+                <FileText className="h-10 w-10 mx-auto mb-4 text-primary"/>
+                <h3 className="font-headline text-lg font-semibold">TKDN</h3>
+                <p className="text-sm text-muted-foreground mt-1">Tingkat Komponen Dalam Negeri</p>
+            </Card>
+             <Card className="text-center p-6">
+                <Building className="h-10 w-10 mx-auto mb-4 text-primary"/>
+                <h3 className="font-headline text-lg font-semibold">Anggota ASPA</h3>
+                <p className="text-sm text-muted-foreground mt-1">Asosiasi Aspal Indonesia</p>
+            </Card>
+          </div>
+        </div>
+      </section>
       
        {/* All Products */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
            <div className="text-center mb-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
