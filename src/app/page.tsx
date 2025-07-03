@@ -84,8 +84,40 @@ export default function Home() {
         </div>
       </section>
 
+       {/* All Products */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+           <div className="text-center mb-12">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
+              Produk Kami
+            </h2>
+            <p className="font-body text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
+              Jelajahi solusi material inovatif kami yang direkayasa untuk performa, daya tahan, dan keberlanjutan infrastruktur jalan.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product) => (
+                <div key={product.id} className="border rounded-lg overflow-hidden flex flex-col bg-card">
+                   <div className="relative w-full aspect-square">
+                        <Image src={product.image} alt={product.name} data-ai-hint={product.aiHint} fill className="object-cover" />
+                    </div>
+                    <div className="p-6 flex-grow flex flex-col">
+                        <h3 className="font-headline text-xl font-semibold mb-2">{product.name}</h3>
+                        <p className="text-muted-foreground text-sm mb-4 flex-grow">{product.description}</p>
+                        <Button asChild variant="outline" className="mt-auto">
+                            <Link href={`/products`}>
+                                Pelajari Lebih Lanjut
+                            </Link>
+                        </Button>
+                    </div>
+                </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
       {/* License Section */}
-      <section id="lisensi" className="py-16 md:py-24">
+      <section id="lisensi" className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
               <h2 className="font-headline text-3xl font-bold text-primary">Lisensi &amp; Sertifikasi Kami</h2>
@@ -114,38 +146,6 @@ export default function Home() {
                 <h3 className="font-headline text-lg font-semibold">Anggota ASPA</h3>
                 <p className="text-sm text-muted-foreground mt-1">Asosiasi Aspal Indonesia</p>
             </Card>
-          </div>
-        </div>
-      </section>
-      
-       {/* All Products */}
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Produk Kami
-            </h2>
-            <p className="font-body text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-              Jelajahi solusi material inovatif kami yang direkayasa untuk performa, daya tahan, dan keberlanjutan infrastruktur jalan.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product) => (
-                <div key={product.id} className="border rounded-lg overflow-hidden flex flex-col bg-card">
-                   <div className="relative w-full aspect-square">
-                        <Image src={product.image} alt={product.name} data-ai-hint={product.aiHint} fill className="object-cover" />
-                    </div>
-                    <div className="p-6 flex-grow flex flex-col">
-                        <h3 className="font-headline text-xl font-semibold mb-2">{product.name}</h3>
-                        <p className="text-muted-foreground text-sm mb-4 flex-grow">{product.description}</p>
-                        <Button asChild variant="outline" className="mt-auto">
-                            <Link href={`/products`}>
-                                Pelajari Lebih Lanjut
-                            </Link>
-                        </Button>
-                    </div>
-                </div>
-            ))}
           </div>
         </div>
       </section>
