@@ -21,14 +21,14 @@ export function Footer() {
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="md:col-span-3">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
               Solusi inovatif dan material berkualitas untuk infrastruktur jalan yang berkelanjutan.
             </p>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-headline font-semibold text-primary">Tautan Cepat</h3>
             <ul className="mt-4 space-y-3 text-sm">
                  <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">Tentang Kami</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
                  <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Kontak</Link></li>
             </ul>
           </div>
-           <div>
+           <div className="md:col-span-3">
             <h3 className="font-headline font-semibold text-primary">Hubungi Kami</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
@@ -56,7 +56,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-headline font-semibold text-primary">Ikuti Kami</h3>
              <p className="mt-4 text-sm text-muted-foreground">
               Terhubung dengan kami di media sosial.
@@ -77,6 +77,19 @@ export function Footer() {
               <a href="#" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors">
                 <Youtube className="h-6 w-6" />
               </a>
+            </div>
+          </div>
+           <div className="md:col-span-2">
+            <h3 className="font-headline font-semibold text-primary">Lokasi Kami</h3>
+            <div className="mt-4 rounded-lg overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.425785002596!2d106.90906235!3d-6.183226399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4e915431679%3A0x1d58d8bde6373678!2sJakarta%20Industrial%20Estate%20Pulogadung%20(JIEP)!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                    className="w-full h-40 border-0"
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lokasi Cemerlang Group di Peta Google"
+                ></iframe>
             </div>
           </div>
         </div>
