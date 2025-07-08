@@ -1,17 +1,39 @@
-# Direktori Gambar
+# Folder Gambar Anda
 
-Letakkan semua file gambar statis Anda di sini.
+Letakkan semua file gambar (JPG, PNG, dll.) Anda di dalam folder ini.
 
-Gambar-gambar yang ada di dalam direktori `public` ini dapat direferensikan di dalam kode Anda mulai dari direktori root (`/`).
+Pastikan nama file gambar Anda cocok dengan nama yang digunakan dalam kode aplikasi. Misalnya, untuk gambar utama di halaman beranda, Anda memerlukan file bernama `hero-paving.jpg` di sini.
 
-Sebagai contoh, jika Anda menempatkan file `logo.png` di sini, Anda dapat menggunakannya dalam komponen React seperti ini:
+## Daftar Nama File Gambar
 
-```jsx
-import Image from 'next/image';
+Berikut adalah daftar nama file gambar yang saat ini digunakan di seluruh situs. Ganti file-file ini dengan gambar Anda sendiri yang memiliki nama yang sama.
 
-function MyComponent() {
-  return <Image src="/images/logo.png" alt="Logo Perusahaan" width={200} height={100} />;
-}
-```
+### Halaman & Komponen Utama
+- `hero-paving.jpg`
+- `about-team.jpg`
+- `project-trans-jawa.jpg`
+- `project-airport.jpg`
+- `project-city-road.jpg`
+- `about-green-road.jpg`
 
-Pastikan Anda memberikan nama file yang deskriptif.
+### Artikel Blog
+- `blog-microsurfacing.jpg`
+- `blog-coldmix.jpg`
+- `blog-iso-sertifikasi.jpg`
+- `blog-webinar.jpg`
+- `blog-sami-waterproofing.jpg`
+- `blog-distribusi-kalimantan.jpg`
+- `blog-marka-jalan.jpg`
+- `blog-laporan-keberlanjutan.jpg`
+- `blog-geone-stabilisasi.jpg`
+- `blog-pelatihan-aplikator.jpg`
+
+### Produk
+- `product-microsurfacing.jpg`
+- `product-sealant.jpg`
+- `product-ecobeton.jpg`
+- `product-coldmix.jpg`
+- `product-geone.jpg`
+- `product-microseal.jpg`
+- `product-sami.jpg`
+- `product-mcleod.jpg`
