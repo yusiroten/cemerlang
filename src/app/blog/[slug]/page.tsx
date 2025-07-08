@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 const post = {
   slug: 'penerapan-microsurfacing-proyek-tol-trans-sumatera',
   title: 'Studi Kasus: Penerapan Microsurfacing CH di Proyek Tol Trans-Sumatera',
-  image: 'https://placehold.co/1200x600.png',
+  image: 'https://images.unsplash.com/photo-1523351221683-3c05be3c0f65?q=80&w=1200&h=600&auto=format&fit=crop',
   aiHint: 'highway construction aerial',
   date: '15 Juli 2024',
   author: 'Tim Teknis Cemerlang',
