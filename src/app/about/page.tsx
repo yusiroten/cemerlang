@@ -30,7 +30,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 md:order-2">
               <Image
-                src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=600&h=400&auto=format&fit=crop"
+                src="/images/about-team.jpg"
                 alt="Tim Cemerlang Group"
                 data-ai-hint="engineering team meeting"
                 width={600}
@@ -84,9 +84,9 @@ export default function AboutPage() {
               </p>
           </div>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Image src="https://images.unsplash.com/photo-1588796601449-3e5f39e6d0b3?q=80&w=600&h=400&auto=format&fit=crop" data-ai-hint="highway construction" alt="Proyek Tol Trans-Jawa" width={600} height={400} className="rounded-lg" />
-                <Image src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=600&h=400&auto=format&fit=crop" data-ai-hint="airport runway" alt="Proyek Landasan Pacu Bandara" width={600} height={400} className="rounded-lg" />
-                <Image src="https://images.unsplash.com/photo-1619451158399-f4c2f6de5a1b?q=80&w=600&h=400&auto=format&fit=crop" data-ai-hint="city road repair" alt="Proyek Jalan Perkotaan" width={600} height={400} className="rounded-lg" />
+                <Image src="/images/project-trans-jawa.jpg" data-ai-hint="highway construction" alt="Proyek Tol Trans-Jawa" width={600} height={400} className="rounded-lg" />
+                <Image src="/images/project-airport.jpg" data-ai-hint="airport runway" alt="Proyek Landasan Pacu Bandara" width={600} height={400} className="rounded-lg" />
+                <Image src="/images/project-city-road.jpg" data-ai-hint="city road repair" alt="Proyek Jalan Perkotaan" width={600} height={400} className="rounded-lg" />
            </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function AboutPage() {
            <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=600&h=400&auto=format&fit=crop"
+                src="/images/about-green-road.jpg"
                 alt="Jalan Hijau"
                 data-ai-hint="green road nature"
                 width={600}
