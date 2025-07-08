@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Download, Phone, Wrench, FileText, MessageSquare } from 'lucide-react';
 import { CtaSection } from '@/components/cta-section';
+import Image from 'next/image';
 
 const guides = [
   {
@@ -31,12 +32,21 @@ const guides = [
 export default function ResourcesPage() {
   return (
     <>
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Dukungan Teknis</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+      <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <Image
+            src="/images/hero-resources.jpg"
+            alt="Tim dukungan teknis sedang berdiskusi"
+            data-ai-hint="technical support call"
+            fill
+            priority
+            className="object-cover"
+        />
+        <div className="container mx-auto px-4 z-20 relative">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold">Dukungan Teknis</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Kami bukan hanya pemasok material, kami adalah mitra teknis Anda di lapangan.
-          </p>
+            </p>
         </div>
       </section>
 

@@ -11,6 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
+import Image from 'next/image';
 
 const initialState: FormState = {
   message: '',
@@ -43,12 +44,21 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Hubungi Kami</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+      <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <Image
+            src="/images/hero-contact.jpg"
+            alt="Jabat tangan antara klien dan staf layanan pelanggan"
+            data-ai-hint="customer service handshake"
+            fill
+            priority
+            className="object-cover"
+        />
+        <div className="container mx-auto px-4 z-20 relative">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold">Hubungi Kami</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Kami siap membantu. Baik untuk pertanyaan produk, permintaan penawaran, maupun konsultasi teknis, tim kami siap melayani Anda.
-          </p>
+            </p>
         </div>
       </section>
 

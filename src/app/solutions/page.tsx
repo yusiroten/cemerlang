@@ -9,6 +9,7 @@ import { ArrowRight, Construction, Droplets, Paintbrush, Network } from "lucide-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CtaSection } from "@/components/cta-section";
+import Image from "next/image";
 
 const solutions = [
   {
@@ -44,12 +45,21 @@ const solutions = [
 export default function SolutionsPage() {
   return (
     <>
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Solusi Aplikasi Kami</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+      <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <Image
+            src="/images/hero-solutions.jpg"
+            alt="Insinyur merencanakan konstruksi jalan"
+            data-ai-hint="engineer planning construction"
+            fill
+            priority
+            className="object-cover"
+        />
+        <div className="container mx-auto px-4 z-20 relative">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold">Solusi Aplikasi Kami</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Solusi terintegrasi yang dirancang untuk menjawab setiap tantangan dalam siklus hidup infrastruktur jalan.
-          </p>
+            </p>
         </div>
       </section>
 

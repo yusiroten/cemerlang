@@ -11,12 +11,21 @@ import { Badge } from '@/components/ui/badge';
 export default function BlogPage() {
   return (
     <>
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Blog & Berita</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+      <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <Image
+            src="/images/hero-blog.jpg"
+            alt="Seseorang menulis di buku catatan"
+            data-ai-hint="person writing notes"
+            fill
+            priority
+            className="object-cover"
+        />
+        <div className="container mx-auto px-4 z-20 relative">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold">Blog & Berita</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Dapatkan informasi terbaru, studi kasus, dan berita seputar inovasi material dan kegiatan Cemerlang Group.
-          </p>
+            </p>
         </div>
       </section>
 

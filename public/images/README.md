@@ -1,22 +1,39 @@
-# Folder Gambar Anda
+# Panduan Gambar
 
-Letakkan semua file gambar (JPG, PNG, dll.) Anda di dalam folder ini.
+Folder ini berisi semua gambar yang digunakan di situs web Cemerlang Group. Untuk menggunakan gambar Anda sendiri, cukup ganti file yang ada di sini dengan file Anda. Pastikan nama file baru sama persis dengan nama file yang diganti.
 
-Pastikan nama file gambar Anda cocok dengan nama yang digunakan dalam kode aplikasi. Misalnya, untuk gambar utama di halaman beranda, Anda memerlukan file bernama `hero-paving.jpg` di sini.
+Resolusi gambar yang disarankan adalah **1200x800 piksel** untuk gambar berorientasi lanskap agar terlihat baik di berbagai perangkat.
 
-## Daftar Nama File Gambar
+## Daftar Nama File Gambar yang Dibutuhkan
 
-Berikut adalah daftar nama file gambar yang saat ini digunakan di seluruh situs. Ganti file-file ini dengan gambar Anda sendiri yang memiliki nama yang sama.
+### Gambar Hero Section Utama
+- `hero-paving.jpg`: Gambar utama di halaman Beranda.
+- `hero-about.jpg`: Gambar hero di halaman Tentang Kami.
+- `hero-products.jpg`: Gambar hero di halaman Produk.
+- `hero-solutions.jpg`: Gambar hero di halaman Solusi.
+- `hero-resources.jpg`: Gambar hero di halaman Dukungan Teknis.
+- `hero-contact.jpg`: Gambar hero di halaman Kontak.
+- `hero-blog.jpg`: Gambar hero di halaman Blog.
+- `hero-toko.jpg`: Gambar hero di halaman Toko.
 
-### Halaman & Komponen Utama
-- `hero-paving.jpg`
-- `about-team.jpg`
-- `project-trans-jawa.jpg`
-- `project-airport.jpg`
-- `project-city-road.jpg`
-- `about-green-road.jpg`
+### Gambar Halaman "Tentang Kami"
+- `about-team.jpg`: Foto tim atau suasana kantor.
+- `about-green-road.jpg`: Gambar yang merepresentasikan komitmen lingkungan.
+- `project-trans-jawa.jpg`: Foto proyek jalan tol.
+- `project-airport.jpg`: Foto proyek bandara.
+- `project-city-road.jpg`: Foto proyek jalan perkotaan.
 
-### Artikel Blog
+### Gambar Produk (digunakan di Beranda, Produk, dan Toko)
+- `product-microsurfacing.jpg`
+- `product-sealant.jpg`
+- `product-ecobeton.jpg`
+- `product-coldmix.jpg`
+- `product-geone.jpg`
+- `product-microseal.jpg`
+- `product-sami.jpg`
+- `product-mcleod.jpg`
+
+### Gambar Blog
 - `blog-microsurfacing.jpg`
 - `blog-coldmix.jpg`
 - `blog-iso-sertifikasi.jpg`
@@ -27,13 +44,3 @@ Berikut adalah daftar nama file gambar yang saat ini digunakan di seluruh situs.
 - `blog-laporan-keberlanjutan.jpg`
 - `blog-geone-stabilisasi.jpg`
 - `blog-pelatihan-aplikator.jpg`
-
-### Produk
-- `product-microsurfacing.jpg`
-- `product-sealant.jpg`
-- `product-ecobeton.jpg`
-- `product-coldmix.jpg`
-- `product-geone.jpg`
-- `product-microseal.jpg`
-- `product-sami.jpg`
-- `product-mcleod.jpg`
