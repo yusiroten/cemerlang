@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-          src="/images/hero-about.jpg"
+          src="https://placehold.co/1200x500.png"
           alt="Kantor Cemerlang Group"
           data-ai-hint="company office interior"
           fill
@@ -39,7 +39,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 md:order-2">
               <Image
-                src="/images/about-team.jpg"
+                src="https://placehold.co/600x400.png"
                 alt="Tim Cemerlang Group"
                 data-ai-hint="engineering team meeting"
                 width={600}
@@ -93,9 +93,9 @@ export default function AboutPage() {
               </p>
           </div>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Image src="/images/project-trans-jawa.jpg" data-ai-hint="highway construction" alt="Proyek Tol Trans-Jawa" width={600} height={400} className="rounded-lg" />
-                <Image src="/images/project-airport.jpg" data-ai-hint="airport runway" alt="Proyek Landasan Pacu Bandara" width={600} height={400} className="rounded-lg" />
-                <Image src="/images/project-city-road.jpg" data-ai-hint="city road repair" alt="Proyek Jalan Perkotaan" width={600} height={400} className="rounded-lg" />
+                <Image src="https://placehold.co/600x400.png" data-ai-hint="highway construction" alt="Proyek Tol Trans-Jawa" width={600} height={400} className="rounded-lg" />
+                <Image src="https://placehold.co/600x400.png" data-ai-hint="airport runway" alt="Proyek Landasan Pacu Bandara" width={600} height={400} className="rounded-lg" />
+                <Image src="https://placehold.co/600x400.png" data-ai-hint="city road repair" alt="Proyek Jalan Perkotaan" width={600} height={400} className="rounded-lg" />
            </div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function AboutPage() {
            <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/images/about-green-road.jpg"
+                src="https://placehold.co/600x400.png"
                 alt="Jalan Hijau"
                 data-ai-hint="green road nature"
                 width={600}

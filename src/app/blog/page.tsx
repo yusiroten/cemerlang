@@ -14,7 +14,7 @@ export default function BlogPage() {
       <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-            src="/images/hero-blog.jpg"
+            src="https://placehold.co/1200x500.png"
             alt="Seseorang menulis di buku catatan"
             data-ai-hint="person writing notes"
             fill

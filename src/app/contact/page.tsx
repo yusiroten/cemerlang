@@ -47,7 +47,7 @@ export default function ContactPage() {
       <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-            src="/images/hero-contact.jpg"
+            src="https://placehold.co/1200x500.png"
             alt="Jabat tangan antara klien dan staf layanan pelanggan"
             data-ai-hint="customer service handshake"
             fill

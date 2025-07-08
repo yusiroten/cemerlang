@@ -12,7 +12,7 @@ export default function ProductsPage() {
       <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-            src="/images/hero-products.jpg"
+            src="https://placehold.co/1200x500.png"
             alt="Gudang material konstruksi"
             data-ai-hint="construction material warehouse"
             fill
