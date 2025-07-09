@@ -35,7 +35,7 @@ export default function TokoPage() {
       <section className="relative h-[40vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-            src="https://placehold.co/1200x500.png"
+            src="https://images.unsplash.com/photo-1583316174966-d812f25a0735?w=1200&h=500&fit=crop&q=80"
             alt="Keranjang belanja online di layar laptop"
             data-ai-hint="online shopping cart"
             fill

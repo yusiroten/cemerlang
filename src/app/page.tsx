@@ -15,7 +15,7 @@ export default function Home() {
       <section className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://images.unsplash.com/photo-1541301435424-63576135b62b?w=1920&h=1080&fit=crop&q=80"
           alt="Pekerja mengaplikasikan pelapisan jalan"
           data-ai-hint="road paving workers"
           fill
