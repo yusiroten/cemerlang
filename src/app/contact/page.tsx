@@ -104,8 +104,8 @@ export default function ContactPage() {
                            <Phone className="w-5 h-5"/>
                         </div>
                         <div>
-                            <h3 className="font-semibold">WhatsApp (WA)</h3>
-                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">+62 812-3456-7890</a>
+                            <h3 className="font-semibold">Telepon Kantor</h3>
+                            <a href="tel:02138805294" className="text-muted-foreground hover:text-primary">021-38805294</a>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">
@@ -114,7 +114,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                             <h3 className="font-semibold">Email</h3>
-                            <a href="mailto:kontak@cemerlang.group" className="text-muted-foreground hover:text-primary">kontak@cemerlang.group</a>
+                            <a href="mailto:info@cemerlang.pro" className="text-muted-foreground hover:text-primary">info@cemerlang.pro</a>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">
@@ -123,7 +123,12 @@ export default function ContactPage() {
                         </div>
                         <div>
                             <h3 className="font-semibold">Alamat Kantor</h3>
-                            <p className="text-muted-foreground">Kawasan Industri Cemerlang, Jl. Raya Aspal No. 123, Jakarta, Indonesia</p>
+                            <p className="text-muted-foreground">
+                                Plaza Mebel #31-35<br />
+                                Jl. RS Fatmawati Kav. 5<br />
+                                Cipete Utara, Kebayoran Baru<br />
+                                Jakarta 12420
+                            </p>
                         </div>
                     </div>
                 </div>

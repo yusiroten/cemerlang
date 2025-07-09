@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
               Solusi inovatif dan material berkualitas untuk infrastruktur jalan yang berkelanjutan.
@@ -30,18 +30,23 @@ export function Footer() {
           </div>
            <div className="md:col-span-3">
             <h3 className="font-headline font-semibold text-primary">Hubungi Kami</h3>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:kontak@cemerlang.group" className="hover:text-primary">kontak@cemerlang.group</a>
+            <ul className="mt-4 space-y-4 text-sm">
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <Mail className="h-4 w-4 mt-1 flex-shrink-0" />
+                <a href="mailto:info@cemerlang.pro" className="hover:text-primary">info@cemerlang.pro</a>
               </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-primary">+62 812-3456-7890</a>
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <Phone className="h-4 w-4 mt-1 flex-shrink-0" />
+                <a href="tel:02138805294" className="hover:text-primary">021-38805294</a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>Kawasan Industri Cemerlang, Jl. Raya Aspal No. 123, Jakarta, Indonesia</span>
+                <span>
+                  Plaza Mebel #31-35<br />
+                  Jl. RS Fatmawati Kav. 5<br />
+                  Cipete Utara, Kebayoran Baru<br />
+                  Jakarta 12420
+                </span>
               </li>
             </ul>
           </div>
@@ -68,12 +73,12 @@ export function Footer() {
               </a>
             </div>
           </div>
-           <div className="md:col-span-2">
+           <div className="md:col-span-3">
             <h3 className="font-headline font-semibold text-primary">Lokasi Kami</h3>
-            <div className="mt-4 rounded-lg overflow-hidden">
+            <div className="mt-4 rounded-lg overflow-hidden h-56">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.425785002596!2d106.90906235!3d-6.183226399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4e915431679%3A0x1d58d8bde6373678!2sJakarta%20Industrial%20Estate%20Pulogadung%20(JIEP)!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-                    className="w-full h-48 border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.338692795129!2d106.79793267587802!3d-6.219013093769188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1687f18a221%3A0x28a15752179a41e!2sPlaza%20Mebel!5e0!3m2!1sen!2sid!4v1721896792620!5m2!1sen!2sid"
+                    className="w-full h-full border-0"
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
