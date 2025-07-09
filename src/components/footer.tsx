@@ -25,7 +25,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
-              Solusi inovatif dan material berkualitas untuk infrastruktur jalan yang berkelanjutan.
+              Cemerlang Group adalah pemasok terkemuka untuk material konstruksi dan pemeliharaan jalan di Indonesia. Kami berdedikasi untuk menyediakan produk inovatif, dukungan teknis ahli, dan solusi berkelanjutan untuk membangun infrastruktur yang lebih kuat dan tahan lama.
             </p>
           </div>
            <div className="md:col-span-3">
