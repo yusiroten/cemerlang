@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
               Cemerlang Group adalah pemasok terkemuka untuk material konstruksi dan pemeliharaan jalan di Indonesia. Kami berdedikasi untuk menyediakan produk inovatif, dukungan teknis ahli, dan solusi berkelanjutan untuk membangun infrastruktur yang lebih kuat dan tahan lama.
@@ -73,7 +73,7 @@ export function Footer() {
               </a>
             </div>
           </div>
-           <div className="md:col-span-3">
+           <div className="md:col-span-4">
             <h3 className="font-headline font-semibold text-primary">Lokasi Kami</h3>
             <div className="mt-4 rounded-lg overflow-hidden h-56">
                 <iframe
