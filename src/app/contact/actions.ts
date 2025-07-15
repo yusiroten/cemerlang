@@ -1,6 +1,8 @@
+
 "use server";
 
 import { z } from "zod";
+import { categorizeInquiry } from "@/ai/flows/categorizeInquiry-flow";
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: "Nama harus terdiri dari minimal 2 karakter." }),
@@ -34,19 +36,23 @@ export async function submitContactForm(
   }
 
   try {
-    // Here you would typically send an email, e.g., using a service like Resend or Nodemailer.
-    // For this example, we'll just log the data to the console.
-    console.log("New contact form submission:");
-    console.log(validatedFields.data);
+    // Memanggil Genkit Flow untuk menganalisis pesan
+    const analysis = await categorizeInquiry(validatedFields.data);
 
+    // Di dunia nyata, Anda akan menyimpan data ini ke database atau mengirimkannya ke sistem tiket.
+    // Untuk contoh ini, kita akan log ke konsol.
+    console.log("New contact form submission:");
+    console.log("Data:", validatedFields.data);
+    console.log("AI Analysis:", analysis);
+    
     return {
       message: "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.",
       success: true,
     };
   } catch (error) {
-    console.error("Failed to process contact form:", error);
+    console.error("Failed to process contact form or AI analysis:", error);
     return {
-      message: "Terjadi kesalahan tak terduga. Silakan coba lagi nanti.",
+      message: "Terjadi kesalahan tak terduga saat memproses pesan Anda. Silakan coba lagi nanti.",
       success: false,
     };
   }
