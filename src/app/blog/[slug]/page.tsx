@@ -6,16 +6,39 @@ import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { posts } from '@/lib/blog-data';
+import { generateBlogPost } from '@/ai/flows/generateBlogPost-flow';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Suspense } from 'react';
 
-// In a real application, you would fetch this data based on the slug
-// For this example, we'll use static data for the first post.
+// Fungsi untuk mendapatkan data post berdasarkan slug
 const getPostBySlug = (slug: string) => {
   return posts.find(p => p.slug === slug);
 }
 
+// Komponen untuk mengambil dan menampilkan konten blog dari AI
+async function BlogPostContent({ title }: { title: string }) {
+  const blogPost = await generateBlogPost({ title });
+  return <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />;
+}
+
+// Komponen fallback untuk ditampilkan selama konten dimuat
+function ContentSkeleton() {
+    return (
+        <div className="space-y-6">
+            <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-4 w-3/4" />
+            <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-4 w-full" />
+            <br />
+            <Skeleton className="h-6 w-1/2" />
+            <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-4 w-5/6" />
+        </div>
+    )
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  // You can use the `params.slug` to fetch the correct post data
-  // from a CMS or database in a real-world scenario.
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -29,47 +52,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
       )
   }
-
-  const contentBySlug: Record<string, React.ReactNode> = {
-    'penerapan-microsurfacing-proyek-tol-trans-sumatera': (
-      <>
-        <p className="lead text-xl text-muted-foreground">
-          Proyek pembangunan infrastruktur strategis nasional seperti Tol Trans-Sumatera menuntut penggunaan material yang tidak hanya berkualitas tinggi tetapi juga efisien dalam aplikasinya. Cemerlang Group bangga telah menjadi bagian dari proyek ini dengan menyuplai Microsurfacing CH, solusi pelapisan ulang yang inovatif untuk menjaga kondisi jalan tol tetap prima.
-        </p>
-        <p>
-          Microsurfacing adalah lapisan tipis (thin overlay) yang terdiri dari campuran agregat, aspal emulsi polimer, air, dan aditif. Aplikasinya yang cepat dan kemampuannya untuk kering dalam waktu singkat menjadikannya solusi ideal untuk proyek dengan lalu lintas padat seperti jalan tol, di mana penutupan lajur harus diminimalkan.
-        </p>
-        
-        <h2 className="text-primary">Tantangan di Lapangan</h2>
-        <p>
-          Salah satu ruas Tol Trans-Sumatera menunjukkan tanda-tanda keausan dini akibat volume lalu lintas yang tinggi dan paparan cuaca ekstrem. Tantangan utamanya adalah melakukan perbaikan tanpa mengganggu arus lalu lintas secara signifikan. Diperlukan solusi yang dapat diaplikasikan dengan cepat, memiliki daya tahan tinggi, dan meningkatkan tingkat kekesatan permukaan jalan untuk keselamatan.
-        </p>
-
-        <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
-          "Kami membutuhkan solusi yang bisa mengembalikan performa jalan dalam waktu singkat. Microsurfacing CH dari Cemerlang Group menjawab kebutuhan tersebut dengan sempurna," ujar Manajer Proyek Lapangan.
-        </blockquote>
-        
-        <h2 className="text-primary">Solusi dan Implementasi</h2>
-        <p>
-          Tim teknis Cemerlang Group bekerja sama dengan kontraktor untuk merencanakan aplikasi Microsurfacing CH. Prosesnya meliputi:
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Persiapan Permukaan:</strong> Pembersihan permukaan jalan dari debu, kotoran, dan material lepas.</li>
-            <li><strong>Aplikasi Tack Coat:</strong> Penggunaan lapisan tipis aspal emulsi untuk memastikan ikatan yang kuat antara lapisan lama dan baru.</li>
-            <li><strong>Aplikasi Microsurfacing:</strong> Menggunakan mesin khusus, campuran Microsurfacing CH diaplikasikan secara merata di seluruh permukaan jalan dengan ketebalan rata-rata 10-15 mm.</li>
-        </ul>
-        <p>
-          Seluruh pekerjaan dilakukan pada malam hari untuk meminimalkan dampak terhadap lalu lintas. Berkat formula quick-setting, lajur jalan sudah dapat dibuka kembali untuk lalu lintas ringan dalam waktu kurang dari dua jam setelah aplikasi.
-        </p>
-
-        <h2 className="text-primary">Hasil yang Dicapai</h2>
-        <p>
-          Hasilnya sangat memuaskan. Permukaan jalan kembali halus, tingkat kekesatan (skid resistance) meningkat secara signifikan, dan retak-retak rambut tertutup sempurna, mencegah infiltrasi air yang dapat merusak struktur perkerasan lebih dalam. Proyek ini menunjukkan bahwa perawatan preventif dengan material yang tepat seperti Microsurfacing CH dapat secara signifikan memperpanjang umur infrastruktur jalan dan menunda kebutuhan rekonstruksi total yang mahal.
-        </p>
-      </>
-    ),
-    // You can add more static content for other slugs here if needed
-  };
 
   return (
     <>
@@ -101,7 +83,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="prose prose-lg dark:prose-invert mx-auto max-w-none text-foreground">
-            {contentBySlug[post.slug] || <p>{post.excerpt}</p>}
+             <Suspense fallback={<ContentSkeleton />}>
+                <BlogPostContent title={post.title} />
+             </Suspense>
             <div className="mt-12 text-center not-prose">
               <Button asChild>
                 <Link href="/contact">Diskusikan Proyek Anda dengan Ahli Kami</Link>
