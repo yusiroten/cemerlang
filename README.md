@@ -23,3 +23,27 @@ Untuk menjalankan proyek ini di komputer Anda setelah mengunduh kode, ikuti lang
 
 4.  **Buka di Browser:**
     Buka browser Anda dan kunjungi `http://localhost:9002` untuk melihat website berjalan.
+
+## Cara Deploy (Mempublikasikan Website)
+
+Untuk membuat website ini online dan bisa diakses oleh semua orang, ikuti langkah-langkah berikut di terminal Anda.
+
+1.  **Install Firebase CLI (jika belum punya):**
+    Alat ini digunakan untuk mengelola proyek Firebase. Anda hanya perlu menginstalnya sekali.
+    ```bash
+    npm install -g firebase-tools
+    ```
+
+2.  **Login ke Firebase:**
+    Hubungkan terminal dengan akun Google/Firebase Anda.
+    ```bash
+    firebase login
+    ```
+
+3.  **Deploy Website:**
+    Jalankan perintah ini dari dalam folder proyek untuk memulai proses publikasi.
+    ```bash
+    firebase deploy --only hosting
+    ```
+
+Setelah selesai, terminal akan menampilkan URL publik website Anda (contoh: `https://nama-proyek-anda.web.app`). Website Anda kini sudah online!
