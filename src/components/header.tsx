@@ -32,6 +32,7 @@ const navLinks: { href?: string; label: string; subLinks?: { href: string; label
   { href: '/resources', label: 'Dukungan Teknis' },
   { href: '/toko', label: 'Toko' },
   { href: '/blog', label: 'Blog' },
+  { href: '/career', label: 'Karir' },
   { href: '/contact', label: 'Kontak' },
 ];
 
