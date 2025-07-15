@@ -28,7 +28,7 @@ export const products: Product[] = [
     price: 1500000,
     tags: ['Perawatan Jalan', 'Microsurfacing'],
   },
-    {
+  {
     id: 'prod_003',
     name: 'Microsurfacing CH-19',
     description: 'Varian premium untuk perkerasan jalan tol dan arteri primer. Memberikan performa jangka panjang.',
