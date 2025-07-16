@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proyek Website Cemerlang Group
 
 Ini adalah kode sumber untuk website Cemerlang Group yang dibuat dengan Next.js.
@@ -47,3 +48,6 @@ Untuk membuat website ini online menggunakan Netlify, ikuti langkah-langkah beri
     Netlify akan mulai membangun dan mempublikasikan website Anda. Setelah selesai (biasanya dalam beberapa menit), Netlify akan memberikan URL publik untuk website Anda (contoh: `https://nama-unik-anda.netlify.app`). Website Anda kini sudah online!
 
 Setiap kali Anda melakukan `push` perubahan baru ke repository Git Anda, Netlify akan secara otomatis men-deploy ulang versi terbarunya.
+=======
+"# cemerlang" 
+>>>>>>> 3c75d61b96668ca96e9a83cb6c123150c59fd5d4
